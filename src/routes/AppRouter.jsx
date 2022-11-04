@@ -1,13 +1,10 @@
 import { Navigate, Route, Routes } from "react-router-dom"
 import { LoginPage } from "../auth";
 import { CalendarPage } from "../calendar";
-import { useUiStore } from "../hooks/useUiStore";
 
 export const AppRouter = () => {
 
-    const authStates = 'authenticated'; // 'not-authenticated'
-
-    useUiStore()
+    const authStates = 'not-authenticated'; // 'not-authenticated'
 
   return (
 
